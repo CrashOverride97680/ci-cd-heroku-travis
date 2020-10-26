@@ -4,7 +4,7 @@
     const app = require('../app');
 // INIT TESTING
     describe("IT WORKS ?", () => {
-        it(lang.LABEL_TEST_API_PROVINCE_ALL_INFO, done =>
+        it("TEST RUN", done =>
         {
             request(app)
             .get('test')
