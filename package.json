@@ -1,0 +1,25 @@
+{
+  "name": "ci-cd-heroku-travis",
+  "version": "1.0.0",
+  "description": "Example ci/cd heroku and travis ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrashOverride97680/ci-cd-heroku-travis.git"
+  },
+  "keywords": [
+    "TravisCI",
+    "Heroku",
+    "ExpressJS"
+  ],
+  "author": "Fabrizio Manna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrashOverride97680/ci-cd-heroku-travis/issues"
+  },
+  "homepage": "https://github.com/CrashOverride97680/ci-cd-heroku-travis#readme"
+}

@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 15.0.1
+cache: npm
+before_install: 
+  - cd .
+install:
+  - npm install
+script:
+  - npm start
+deploy:
+  provider: heroku
+  api_key:
+    secure: KEY
+  app: ci-cd-heroku-travis
+  on:
+    repo: CrashOverride97680/ci-cd-heroku-travis
