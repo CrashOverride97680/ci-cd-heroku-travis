@@ -10,11 +10,11 @@ install:
 script:
   - npm run test
 env:
-  - api=$API_KEY_TOKEN
+  - api=API_KEY_TOKEN
 deploy:
   provider: heroku
   api_key:
     secure: api
-  app:
-    master: ci-cd-heroku-travis
-    production: ci-cd-heroku-travis
+  on:
+    tags: on
+    all_branches: true
