@@ -14,7 +14,7 @@
                 data: "IT WORKS!"
             });
     })
-    app.listen(app.get('PORT'), () => console.log(lang.LABEL_SERVER, app.get('PORT')));
+    app.listen(app.get('PORT'), () => console.log("SERVER RUN ON PORT:", app.get('PORT')));
     // console.log(lang.LABEL_SERVER, app.get('PORT'));
 // EXPORTING APP FOR TESTING
     module.exports = app;
