@@ -5,6 +5,13 @@
     app.set('PORT', port);
 // INIZIALIZE SERVER
     // app.listen(app.get('PORT'), 'localhost');
+    app.get('/test', (req, resp) => {
+        resp
+            .status(200)
+            .json({
+                data: "IT WORKS!"
+            });
+    })
     app.listen(app.get('PORT'), () => console.log(lang.LABEL_SERVER, app.get('PORT')));
     // console.log(lang.LABEL_SERVER, app.get('PORT'));
 // EXPORTING APP FOR TESTING
