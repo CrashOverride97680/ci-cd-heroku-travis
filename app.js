@@ -2,6 +2,8 @@
     const express = require('express');
 // GENERAL VARIABLE AND SETTING CONF
     const port =  process.env.port || process.env.PORT || 9000;
+// INIZIALIZE FUNCTION, CLASS, ELEMENT AND MODULES
+    const app = express();
     app.set('PORT', port);
 // INIZIALIZE SERVER
     // app.listen(app.get('PORT'), 'localhost');
