@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-  - 14
+- node
+- 'lts/*'
 version: ~> 1.0
 dist: xenial
 os: linux
