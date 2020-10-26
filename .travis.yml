@@ -9,3 +9,9 @@ install:
   - npm install
 script:
   - npm run test
+deploy:
+  provider: heroku
+  api_key: API_KEY_TOKEN
+  app:
+    master: ci-cd-heroku-travis
+    production: ci-cd-heroku-travis
