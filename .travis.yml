@@ -13,7 +13,8 @@ env:
   - api=API_KEY_TOKEN
 deploy:
   provider: heroku
-  api_key: api
+  api_key:
+    secure: api
   app:
     master: ci-cd-heroku-travis
     production: ci-cd-heroku-travis
