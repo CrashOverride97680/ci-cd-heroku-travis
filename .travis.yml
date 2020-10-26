@@ -1,14 +1,11 @@
 language: node_js
 node_js:
   - 15.0.1
-
 version: ~> 1.0
 dist: xenial
 os: linux
 cache: npm
-
 install:
   - npm install
-
 script:
   - npm run test
