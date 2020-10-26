@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/CrashOverride97680/ci-cd-heroku-travis#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "mocha": "^8.2.0",
     "supertest": "^5.0.0"
   }
