@@ -13,6 +13,6 @@ deploy:
   provider: heroku
   app: ci-cd-travis-heroku
   api_key:
-    secure: API_HEROKU
+    secure: $API_HEROKU
   on:
     branch: main
