@@ -10,7 +10,7 @@ install:
 script:
   - npm run test
 env: 
-  - api=$API_KEY_TOKEN
+  - api=API_KEY_TOKEN
 deploy:
   provider: heroku
   api_key:
