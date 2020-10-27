@@ -15,4 +15,4 @@ deploy:
     secure: $API_KEY_TOKEN
   branches:
     only:
-      - master
+      - main
