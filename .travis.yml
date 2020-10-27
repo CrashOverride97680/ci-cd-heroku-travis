@@ -15,4 +15,4 @@ deploy:
   api_key:
     secure: $API_HEROKU
   on:
-    branch: main
+    repo: CrashOverride97680/ci-cd-heroku-travis
