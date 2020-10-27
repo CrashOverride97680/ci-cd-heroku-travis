@@ -15,6 +15,6 @@ deploy:
   provider: heroku
   api_key:
     secure: api
-  on:
-    tags: on
-    all_branches: true
+  branches:
+    only:
+      - master
