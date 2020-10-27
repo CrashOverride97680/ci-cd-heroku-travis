@@ -6,7 +6,8 @@ dist: xenial
 os: linux
 cache: npm
 install:
-- npm install
+  - npm install
+  - apt-get install heroku 
 script:
 - npm run test
 deploy:
