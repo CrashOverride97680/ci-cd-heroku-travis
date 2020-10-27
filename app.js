@@ -9,7 +9,7 @@
     // app.listen(app.get('PORT'), 'localhost');
     app.get('/test', (req, resp) => {
         resp
-            .status(200)
+            .status(600)
             .json({
                 data: "IT WORKS!"
             });
