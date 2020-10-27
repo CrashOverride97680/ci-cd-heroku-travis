@@ -9,12 +9,3 @@ install:
   - npm install
 script:
   - npm run test
-deploy:
-  provider: heroku
-  app: ci-cd-travis-heroku
-  api_key:
-    secure: $API_HEROKU
-  on:
-    repo: CrashOverride97680/ci-cd-heroku-travis
-    branch:
-      - main
