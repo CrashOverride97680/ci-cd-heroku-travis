@@ -9,12 +9,10 @@ install:
   - npm install
 script:
   - npm run test
-env:
-  - api=API_KEY_TOKEN
 deploy:
   provider: heroku
   api_key:
-    secure: api
+    secure: $API_KEY_TOKEN
   branches:
     only:
       - master
