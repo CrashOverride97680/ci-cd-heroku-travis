@@ -11,7 +11,8 @@ script:
   - npm run test
 deploy:
   provider: heroku
+  app: ci-cd-travis-heroku
   api_key:
-    secure: 009c6622-c041-485f-85e9-5a07bf476a9f
+    secure: API_HEROKU
   on:
     branch: main
