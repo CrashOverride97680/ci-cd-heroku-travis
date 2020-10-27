@@ -7,7 +7,7 @@ os: linux
 cache: npm
 install:
   - npm install
-  - apt-get install heroku 
+  - heroku update
 script:
 - npm run test
 deploy:
