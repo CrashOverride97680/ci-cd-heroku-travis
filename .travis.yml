@@ -4,17 +4,19 @@ node_js:
 version: "~> 1.0"
 dist: xenial
 os: linux
-cache: npm
+cache: 
+  - npm
+  - heroku
 install:
-- npm install
-- heroku update
+  - npm install
+  - heroku update
 script:
-- npm run test
+  - npm run test
 deploy:
   provider: heroku
   api_key:
     secure: mcCR2Br2NZaqyAqTXjLiO43/UkQDXTgNi5XFAdLP034xwIc+0TwHIdRl6Mn0ptktSvVXRjQCGtU89py9X/JiWNSaMHaWSdda0nkYfr+rN4EuNeEE/7xs8fIlHdcRkJASIqVB0vhq9GJNQ6VLaeYVaLmRcIN/FCs54EV5S//cJewI8vOQB/VFgFzWg/EiZyfNBY2+ogzmjwWkN40/6ofCwLV2KuoWEXY64EIdZyS+ADjWGBNppcm+2Wfqz00kK3i8svsCdiKEiV85nnu1G1IHvn0CgMSzpxqfllCCsLUbZZfsGQyilccQSJmuoHcaldNkr8s2VFwCHYnwIodaER2sicw6rddHnGL7amfCtocjZ/kAkS8yFmTZxhTYlu0WhxZKz8t4X7YybAjTO+zAUhFQ2FPxaeIRWQ3NPqi0Ki7rCXzJvmrUCxuAdpEyxNeBeaVmMS9WtO2Gg/xRrgMxPBDS0tNkUDti8dJoG9bEBKiOPkkzH/WxSKPRe1+n5PhO60q2PD6QYqQ6H5xmmgim/+QjOFIQjX2E0kEJWbeGxNkz/B4cNpoSNQ+HgUu0gaGgoUCieAG6WTXaqc0RXEvXY9ciQZ/Ybd98MObp5utS+ObqFgc4N434kf9NrECCQFvy8moj0G1M8gPVY9mMeNlo3GRk98yU5XsdGCEFxhsAuJsISaM=
-  app: ci-cd-heroku-travis
+  app: ci-cd-travis-heroku
   on:
     repo: CrashOverride97680/ci-cd-heroku-travis
     branch: main
