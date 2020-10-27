@@ -1,11 +1,20 @@
 language: node_js
 node_js:
 - 15
-version: ~> 1.0
+version: "~> 1.0"
 dist: xenial
 os: linux
 cache: npm
 install:
-  - npm install
+- npm install
 script:
-  - npm run test
+- npm run test
+deploy:
+  provider: heroku
+  app: ci-cd-travis-heroku
+  api_key:
+    secure: DM3uhn9ASNit8udnOHoWXyS85DcHva/0vg2XAL6kwyRinc1EKoo2BzhRT0qJhpqAxiPxdoHFjVVbGmRD9aTISDqzGuJjbKgDXpvWCkC5n0cO04UdvhJ8/nQhioTYq1ENhRYVywtP6N/C+rRna92YdCrUXlO+3YF8zyBZe4qtmwkihui/MNWvxiTS70WiGi/eeLPFs6VGpTCRBx/ho3noYcrZxIJ6rfn1KFesYnsJDl2pm7lavGFpCPEQ2F6kOWqyIXRzn6drCZeTq8J6btoyVH5317kgsFEska1qwCTW3r6ZWmXyEODauFjUoGPu9+mmblxoMyx40XwApYIenKKc6KbeZJKQTWm9W2Sk7XeXfix8CrcSPS2v8Jw5o4hUrGIq7+FKQlx5zqAZT4mZbmmcZgrrrBXnvNkKrWJsXnCdfNqBYSt53yPMsHHvXwGN0YJFWJuPZJ4diFUD952x9LHN6CF41Csy4MaxwH5m+05YZdUTyknM/6ESq2fTjPeq/jsexWMGZUXwc8G7UAG00h7IB63woqRqAcQ3Fnz7SU/NxI/yrXexDsnhT8NlZWpTJqVsIepclADGacUpkdji1USZSabkqBmOnJRwBQSkM/QIK1FqMP/h3pVL3E5SwEkJT3qp65RLsIjmUwd+s4QzobkdlptI8ziKwqy1l97lZu8mQ40=
+  on:
+    repo: CrashOverride97680/ci-cd-heroku-travis
+    branch:
+      - main
